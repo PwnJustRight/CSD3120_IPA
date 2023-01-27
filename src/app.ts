@@ -5,14 +5,15 @@ export class App {
     private engine: Engine;                     //Engine
     private canvas: HTMLCanvasElement;          //HTMLCanvas
 
-    constructor(engine: Engine, canvas:HTMLCanvasElement)
+    constructor(engine: Engine)
     {
         this.engine = engine;
-        this.canvas = canvas;
         console.log("app is running");
     }
 
-    async createScene()
+    async createXRScene(
+        canvasID : HTMLCanvasElement)
+        //,authoringData: {[dataType:string]: {[key:string]: any}})
     {
         const scene = new Scene(this.engine);
         scene.createDefaultCameraOrLight();
@@ -69,12 +70,5 @@ export class App {
         (window as any).xr = xr;
 
         return scene;
-    }
-
-    createXRScene(
-        canvasID : HTMLCanvasElement,
-        authoringData: {[dataType:string]: {[key:string]: any}})
-    {
-        
     }
 }
