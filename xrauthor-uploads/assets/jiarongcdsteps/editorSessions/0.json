@@ -1,0 +1,50 @@
+{
+  "steps": [
+    {
+      "startTime": 0,
+      "endTime": 169.1339999999996
+    },
+    {
+      "startTime": 0,
+      "endTime": 38.04973704564315
+    },
+    {
+      "startTime": 37.698687253112034,
+      "endTime": 96.05046605809127
+    },
+    {
+      "startTime": 96.05046605809127,
+      "endTime": 142.71550551037342
+    },
+    {
+      "startTime": 143.5931299917012,
+      "endTime": 169.206
+    }
+  ],
+  "annotations": [
+    {
+      "text": "combination reaction",
+      "x": -0.2937220907010089,
+      "y": 0.42602933876452664,
+      "startTime": "00",
+      "endTime": "040",
+      "isAttached": false,
+      "anchor": {
+        "id": 10
+      },
+      "object": null
+    },
+    {
+      "text": "decomposition reaction",
+      "x": 0,
+      "y": 0,
+      "startTime": "6036",
+      "endTime": "12018",
+      "isAttached": false,
+      "anchor": {
+        "id": 10
+      },
+      "object": null
+    }
+  ]
+}
