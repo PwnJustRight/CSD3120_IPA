@@ -70,4 +70,11 @@ export class App {
 
         return scene;
     }
+
+    createXRScene(
+        canvasID : HTMLCanvasElement,
+        authoringData: {[dataType:string]: {[key:string]: any}})
+    {
+        
+    }
 }
