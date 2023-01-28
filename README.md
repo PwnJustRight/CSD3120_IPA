@@ -1,12 +1,16 @@
 # CSD3120_IPA
-Phang Jia Rong
+**Authour:** Phang Jia Rong
 
-2001145
+**ID:** 2001145
 
-To install dependencies:
-1. Run wsl in your folder directory and run the command: "npm install"
+**Ensure that you have installed:**
+    1. npm 
+    2. nodejs
 
-To build and run the serve:
+**To install dependencies:**
+    1. Run wsl in your folder directory and run the command: "npm install"
+
+**To build and run the serve:**
     
     Input these two commands in order:
         
@@ -16,8 +20,8 @@ To build and run the serve:
 
     Open your browser and go to http://localhost:1234/
 
-A2 Video Links:
+**A2 Video Links:**
 
-https://www.youtube.com/watch?v=C3bipPu3flE
+    https://www.youtube.com/watch?v=C3bipPu3flE
 
-https://drive.google.com/file/d/11rPX4sAp3au4ntdBEwJFVTgS__q3FyBH/view?usp=share_link
+    https://drive.google.com/file/d/11rPX4sAp3au4ntdBEwJFVTgS__q3FyBH/view?usp=share_link
