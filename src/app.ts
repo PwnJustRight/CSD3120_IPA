@@ -1,16 +1,33 @@
+/**
+ * Authour : Phang Jia Rong 2001145
+ */
+
 import { Engine, MeshBuilder, Scene } from "babylonjs";             //Import classes from babylonjs
 import { AdvancedDynamicTexture, TextBlock} from 'babylonjs-gui';   //Import classes from babylonjs-gui
 
+/**
+ * App class that holds the framework of the app and functions to 
+ * create the XRScene and its properties
+ */
 export class App {
     private engine: Engine;                     //Engine
     private canvas: HTMLCanvasElement;          //HTMLCanvas
 
+    /**
+     * Constructor for the App class
+     * @param engine 
+     */
     constructor(engine: Engine)
     {
         this.engine = engine;
         console.log("app is running");
     }
 
+    /**
+     * App class that holds the framework of the app and functions to 
+     * create the XRScene and its properties
+     * @param canvasID is the string ID of the HTMLCanvasElement target to render the scene
+     */
     async createXRScene(
         canvasID : HTMLCanvasElement)
         //,authoringData: {[dataType:string]: {[key:string]: any}})
