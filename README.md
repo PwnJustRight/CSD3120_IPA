@@ -4,10 +4,12 @@
 **ID:** 2001145
 
 **Ensure that you have installed:**
+
     1. npm 
     2. nodejs
 
 **To install dependencies:**
+
     1. Run wsl in your folder directory and run the command: "npm install"
 
 **To build and run the serve:**
