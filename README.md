@@ -1,5 +1,5 @@
 # CSD3120_IPA
-**Authour:** Phang Jia Rong
+**Author:** Phang Jia Rong
 
 **ID:** 2001145
 
