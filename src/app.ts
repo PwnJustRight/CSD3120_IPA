@@ -29,8 +29,8 @@ export class App {
      * @param canvasID is the string ID of the HTMLCanvasElement target to render the scene
      */
     async createXRScene(
-        canvasID : HTMLCanvasElement)
-        //,authoringData: {[dataType:string]: {[key:string]: any}})
+        canvasID : HTMLCanvasElement
+        ,authoringData: {[dataType:string]: {[key:string]: any}})
     {
         const scene = new Scene(this.engine);
         scene.createDefaultCameraOrLight();
