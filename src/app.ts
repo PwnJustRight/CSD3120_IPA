@@ -24,9 +24,10 @@ export class App {
     }
 
     /**
-     * App class that holds the framework of the app and functions to 
-     * create the XRScene and its properties
+     * Renders the interactive AR/VR scene when user clicks the "XR Format" button in the XRAuthor interface.
      * @param canvasID is the string ID of the HTMLCanvasElement target to render the scene
+     * @param authoringData is a dict of dicts that contains various information from
+     *  other XRAuthor components, e.g., dicts of recordingData, editingData
      */
     async createXRScene(
         canvasID : HTMLCanvasElement
