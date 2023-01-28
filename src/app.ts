@@ -1,5 +1,5 @@
 /**
- * Authour : Phang Jia Rong 2001145
+ * Author : Phang Jia Rong 2001145
  */
 
 import { Engine, MeshBuilder, Scene } from "babylonjs";             //Import classes from babylonjs
@@ -30,7 +30,7 @@ export class App {
      *  other XRAuthor components, e.g., dicts of recordingData, editingData
      */
     async createXRScene(
-        canvasID : HTMLCanvasElement
+        canvasID : string
         ,authoringData: {[dataType:string]: {[key:string]: any}})
     {
         const scene = new Scene(this.engine);
