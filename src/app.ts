@@ -2,10 +2,25 @@
  * Author : Phang Jia Rong 2001145
  */
 
-import { Sound, Color4, ParticleSystem, Color3, CubeTexture, Engine, HemisphericLight, MeshBuilder, PointLight, Scene, StandardMaterial, Texture, UniversalCamera, Vector3, VideoDome, Animation, AbstractMesh, SceneLoader } from "babylonjs";             //Import classes from babylonjs
-import { AdvancedDynamicTexture, TextBlock} from 'babylonjs-gui';   //Import classes from babylonjs-gui
-import 'babylonjs-loaders';
-// import * as BABYLON from 'babylonjs'
+import { Animation } from "@babylonjs/core/Animations/animation";
+import { Sound } from "@babylonjs/core/Audio/sound";
+import { FreeCamera } from "@babylonjs/core/Cameras/freeCamera";
+import { Engine } from "@babylonjs/core/Engines/engine";
+import { VideoDome } from "@babylonjs/core/Helpers";
+import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
+import { PointLight } from "@babylonjs/core/Lights/pointLight";
+import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
+import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
+import { CubeTexture } from "@babylonjs/core/Materials/Textures/cubeTexture";
+import { Texture } from "@babylonjs/core/Materials/Textures/texture";
+import { Color3, Color4, Vector3 } from "@babylonjs/core/Maths/math";
+import { AbstractMesh, MeshBuilder } from "@babylonjs/core/Meshes";
+import { ParticleSystem } from "@babylonjs/core/Particles/particleSystem";
+import { Scene } from "@babylonjs/core/scene";
+import { AdvancedDynamicTexture, TextBlock } from "@babylonjs/gui";
+import "@babylonjs/core/Debug/debugLayer";
+import "@babylonjs/inspector";
+
 /**
  * App class that holds the framework of the app and functions to 
  * create the XRScene and its properties
@@ -71,7 +86,7 @@ export class App {
 
     createCamera(scene : Scene)
     {
-        const camera = new UniversalCamera('uniCamera', new Vector3(0, 0, -5), scene);
+        const camera = new FreeCamera('uniCamera', new Vector3(0, 0, -5), scene);
         camera.attachControl(this.canvas, true);
     }
 
@@ -118,6 +133,7 @@ export class App {
         scene.debugLayer.show();
         window.addEventListener('keydown', e => {
             if(e.ctrlKey && e.altKey && e.key === 'i') {
+                
                 if(scene.debugLayer.isVisible())
                 {
                     scene.debugLayer.hide();

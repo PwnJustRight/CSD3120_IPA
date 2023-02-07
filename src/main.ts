@@ -2,7 +2,8 @@
  * Author : Phang Jia Rong 2001145
  */
 
-import {Engine } from "babylonjs";
+
+import { Engine } from '@babylonjs/core';
 import {App} from './app'
 
 //Getting HTMLCanvasElement
