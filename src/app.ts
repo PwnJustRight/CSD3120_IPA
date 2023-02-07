@@ -18,6 +18,7 @@ import { AbstractMesh, MeshBuilder } from "@babylonjs/core/Meshes";
 import { ParticleSystem } from "@babylonjs/core/Particles/particleSystem";
 import { Scene } from "@babylonjs/core/scene";
 import { AdvancedDynamicTexture, TextBlock } from "@babylonjs/gui";
+import { UniversalCamera } from "@babylonjs/core/Cameras/universalCamera";
 import "@babylonjs/core/Debug/debugLayer";
 import "@babylonjs/inspector";
 
@@ -29,6 +30,7 @@ export class App {
     private engine: Engine;                     //Engine
     private canvas: HTMLCanvasElement;          //HTMLCanvas
     private sound : Sound;
+    private camera : UniversalCamera;
     /**
      * Constructor for the App class
      * @param engine 
@@ -52,9 +54,9 @@ export class App {
         const scene = new Scene(this.engine);
         //scene.createDefaultCameraOrLight();
         
+        this.createCamera(scene);
         this.createSkybox(scene);
         this.createLights(scene);
-        this.createCamera(scene);
 
         this.createVideoSkyDome(scene);
 
@@ -86,8 +88,8 @@ export class App {
 
     createCamera(scene : Scene)
     {
-        const camera = new FreeCamera('uniCamera', new Vector3(0, 0, -5), scene);
-        camera.attachControl(this.canvas, true);
+        this.camera = new UniversalCamera('uniCamera', new Vector3(0, 0, -5), scene);
+        this.camera.attachControl(this.canvas, true);
     }
 
     createLights(scene:Scene)
@@ -113,6 +115,10 @@ export class App {
         skyBoxMaterial.diffuseColor = new Color3(0,0,0);
         skyBoxMaterial.specularColor = new Color3(0,0,0);
         skybox.material = skyBoxMaterial; 
+
+        scene.onBeforeRenderObservable.add(() => {
+            skybox.position.copyFrom(this.camera.position);
+        });
     }
 
     createVideoSkyDome(scene:Scene)
