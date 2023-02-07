@@ -21,6 +21,9 @@ const scenePromise = app.createXRScene(canvas.id, dictionary); //Creates the Sce
 scenePromise.then(scene => {
     engine.runRenderLoop(() => {
         scene.render();
-    }
-    )
-})
+    });
+});
+
+window.addEventListener('resize', () => {
+    engine.resize();
+});

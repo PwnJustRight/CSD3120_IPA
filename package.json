@@ -17,9 +17,14 @@
   "license": "ISC",
   "dependencies": {
     "babylonjs": "^5.42.2",
-    "babylonjs-gui": "^5.42.2"
+    "babylonjs-gui": "^5.42.2",
+    "babylonjs-loaders": "^5.45.1",
+    "babylonjs-materials": "^5.45.1"
   },
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "add": "^2.0.6",
+    "parcel": "^2.8.2",
+    "parcel-reporter-static-files-copy": "^1.5.0",
+    "yarn": "^1.22.19"
   }
 }
