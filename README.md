@@ -16,7 +16,7 @@
 
 	npm run serve
 
-    Open your browser and go to http://localhost:1234/
+    Open your browser and go to http://localhost:3000/
 
 **A2 Video Links:**
 

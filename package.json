@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "**Author:** Phang Jia Rong",
   "scripts": {
-    "build": "vite build",
-    "serve": "vite"
+    "serve": "vite --port 3000"
   },
   "repository": {
     "type": "git",
