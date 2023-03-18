@@ -12,13 +12,9 @@
 
     1. Run wsl in your folder directory and run the command: "npm install"
 
-**To build and run the serve:**
-    
-    Input these two commands in order:
-        
-        1. npm run build
+**To run the serve:**
 
-        2. npm run serve
+	npm run serve
 
     Open your browser and go to http://localhost:1234/
 

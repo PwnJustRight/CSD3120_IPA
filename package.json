@@ -2,8 +2,8 @@
   "name": "ChemicalVR",
   "version": "1.0.0",
   "description": "**Author:** Phang Jia Rong",
-  "main": "index.js",
   "scripts": {
+    "build": "vite build",
     "serve": "vite"
   },
   "repository": {
