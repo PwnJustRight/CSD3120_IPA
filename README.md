@@ -14,11 +14,15 @@ The interactions are as follows:
     3. Moving around by sliding using the left thumbstick.
     4. Teleport using the right thumbstick and releasing
     5. Creating and deleting atoms by gripping the buttons on the left of the chalkboard.
-    6. Creating and deleteing molecules by griping the buttons on the right of the chalkboard.
+    6. Creating and deleting molecules by griping the buttons on the right of the chalkboard.
     7. Deletion of molecules and atoms by placing them in the green trash bins.
 
+**To run the application:**
+Open with the Meta Quest Browser and press the VR selection on the bottom right to start
 
-**Ensure that you have installed:**
+    https://pwnjustright.github.io/CSD3120_IPA/
+
+**Alternatively, Ensure that you have installed:**
 
     1. npm 
     2. nodejs
@@ -32,11 +36,6 @@ The interactions are as follows:
 	npm run serve
 
     Open your browser and go to http://localhost:3000/
-
-**Alternatively:**
-Access the build through the web using this link
-
-    https://pwnjustright.github.io/CSD3120_IPA/
 
 **A2 Video Links:**
 
