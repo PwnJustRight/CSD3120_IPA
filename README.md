@@ -18,6 +18,11 @@
 
     Open your browser and go to http://localhost:3000/
 
+**Alternatively:**
+Access the build through the web using this link
+
+    https://pwnjustright.github.io/CSD3120_IPA/
+
 **A2 Video Links:**
 
     https://www.youtube.com/watch?v=C3bipPu3flE
