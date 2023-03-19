@@ -71,6 +71,15 @@ Alternatively, link of unity project is in Google Drive:
 
     https://drive.google.com/file/d/1v9i1xbI1WX7VwDqS8HPkoVRhbJCaB29z/view?usp=sharing
 
+Troubleshooting:
+
+If you have trouble getting the Quest 2 headset to work in unity
+
+    1. In Unity > Go to Edit > Project Settings > XR Plug-in Management
+    2. Ensure that Initialize XR on Startup is checked
+    3. Ensure that Oculus is checked
+    4. In the Oculus App > Settings > General > Set Oculus as Active 
+
 Note: If the icons are too big in the scene view, you can update the size of the 3D icons in the top right of the scene window. (Click on the drop-down arrow beside the gizmos icon)
 
 # Project Structure
