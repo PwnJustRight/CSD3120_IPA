@@ -26,3 +26,4 @@ desktop-based locomotion interaction exists but very buggy (or you only had addi
 really nice README :)
 Good effort in making all interactions work with attention to UI (e.g., highlighting) but too bad you did not cater to the desktop-based interactions (the main requirement).
 HMD interactions all felt pretty good.
+
